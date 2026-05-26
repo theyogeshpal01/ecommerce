@@ -1,0 +1,99 @@
+@model IEnumerable<GiftStoreMVC.Models.Product>
+@{
+    ViewData["Title"] = "Shop";
+    var categories = ViewBag.Categories as List<GiftStoreMVC.Models.Category>;
+}
+
+<div class="container py-5">
+    <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+            <li class="breadcrumb-item active">Shop</li>
+        </ol>
+    </nav>
+
+    <div class="row g-5">
+        <!-- SIDEBAR -->
+        <div class="col-lg-3 position-sticky" style="top: 100px; height: max-content; z-index: 10;">
+            <div class="bg-white rounded-xl p-4 shadow-sm mb-4" style="border:1px solid var(--border);">
+                <h6 class="fw-700 mb-3" style="font-size:0.85rem;text-transform:uppercase;letter-spacing:1px;">Categories</h6>
+                <div class="d-flex flex-column gap-1">
+                    <a asp-action="Index"
+                       class="d-flex align-items-center gap-2 px-3 py-2 rounded-lg text-decoration-none fw-600 transition-all"
+                       style="font-size:0.875rem;@(ViewBag.CurrentCategory == null ? "background:var(--accent);color:white;" : "color:#374151;")">
+                        <i class="bi bi-grid-3x3-gap" style="font-size:0.85rem;"></i> All Products
+                    </a>
+                    @if (categories != null)
+                    {
+                        @foreach (var cat in categories)
+                        {
+                            <a asp-action="Index" asp-route-category="@cat.Id"
+                               class="d-flex align-items-center gap-2 px-3 py-2 rounded-lg text-decoration-none fw-600 transition-all"
+                               style="font-size:0.875rem;@(ViewBag.CurrentCategory == cat.Id ? "background:var(--accent);color:white;" : "color:#6b7280;")">
+                                <i class="bi bi-tag" style="font-size:0.8rem;"></i> @cat.Name
+                            </a>
+                        }
+                    }
+                </div>
+            </div>
+
+            <!-- Search in sidebar -->
+            <div class="bg-white rounded-xl p-4 shadow-sm" style="border:1px solid var(--border);">
+                <h6 class="fw-700 mb-3" style="font-size:0.85rem;text-transform:uppercase;letter-spacing:1px;">Search</h6>
+                <form method="get" asp-action="Index">
+                    <input type="hidden" name="category" value="@ViewBag.CurrentCategory" />
+                    <div class="d-flex gap-2">
+                        <input type="text" name="search" value="@ViewBag.CurrentSearch" class="form-control" placeholder="Search gifts..." style="font-size:0.85rem;">
+                        <button type="submit" class="btn btn-accent px-3 flex-shrink-0" style="border-radius:10px!important;">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- PRODUCT GRID -->
+        <div class="col-lg-9">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-4 gap-3">
+                <div>
+                    <h4 class="fw-800 mb-1">Our Collection</h4>
+                    <p class="text-muted mb-0" style="font-size:0.875rem;">@Model.Count() products found</p>
+                </div>
+                <form method="get" asp-action="Index">
+                    <input type="hidden" name="category" value="@ViewBag.CurrentCategory" />
+                    <select name="sort" class="form-select" style="width:200px;font-size:0.875rem;" onchange="this.form.submit()">
+                        <option value="newest" selected="@(ViewBag.CurrentSort == "newest")">Newest First</option>
+                        <option value="price_asc" selected="@(ViewBag.CurrentSort == "price_asc")">Price: Low to High</option>
+                        <option value="price_desc" selected="@(ViewBag.CurrentSort == "price_desc")">Price: High to Low</option>
+                    </select>
+                </form>
+            </div>
+
+            @if (Model.Any())
+            {
+                <div class="row g-4">
+                    @foreach (var product in Model)
+                    {
+                        <div class="col-6 col-md-4">
+                            <partial name="_ProductCard" model="product" />
+                        </div>
+                    }
+                </div>
+            }
+            else
+            {
+                <div class="text-center py-5 rounded-xl" style="background:#f8f7ff;border:1px solid #ede9fe;">
+                    <i class="bi bi-search mb-3 d-block" style="font-size:3rem;color:#c4b5fd;"></i>
+                    <h5 class="fw-700 mb-2">No products found</h5>
+                    <p class="text-muted mb-4" style="font-size:0.875rem;">Try a different category or search term.</p>
+                    <a asp-action="Index" class="btn btn-primary-custom px-5">Browse All</a>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<style>
+    .transition-all { transition: all 0.25s ease; }
+    .transition-all:hover { opacity: 0.85; }
+</style>

@@ -1,0 +1,115 @@
+@model IEnumerable<GiftStoreMVC.Models.User>
+@{
+    ViewData["Title"] = "Manage Users";
+    Layout = "_AdminLayout";
+    var currentUserId = Context.Session.GetInt32("UserId");
+}
+
+<div class="admin-card">
+    <div class="admin-card-header">
+        <h6><i class="bi bi-people-fill me-2" style="color:var(--accent);"></i>All Users <span class="text-muted fw-400" style="font-size:0.8rem;">(@Model.Count())</span></h6>
+    </div>
+    <div style="overflow-x:auto;">
+        <table class="admin-table">
+            <thead>
+                <tr>
+                    <th>User</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Joined</th>
+                    <th>Status</th>
+                    <th class="text-end">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr id="row-@item.Id">
+                        <td>
+                            <div class="d-flex align-items-center gap-3">
+                                <div style="width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,#ede9fe,#dbeafe);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.9rem;color:#7c3aed;flex-shrink:0;">
+                                    @item.FullName.Substring(0, 1).ToUpper()
+                                </div>
+                                <span class="fw-600" style="font-size:0.875rem;">@item.FullName</span>
+                            </div>
+                        </td>
+                        <td style="font-size:0.82rem;color:#6b7280;">@item.Email</td>
+                        <td>
+                            @if (item.Role == GiftStoreMVC.Models.UserRole.Admin)
+                            {
+                                <span class="status-badge badge-admin">Admin</span>
+                            }
+                            else
+                            {
+                                <span class="status-badge badge-user">User</span>
+                            }
+                        </td>
+                        <td style="font-size:0.8rem;color:#6b7280;">@item.CreatedAt.ToString("MMM dd, yyyy")</td>
+                        <td>
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="form-check form-switch mb-0">
+                                    <input class="form-check-input" type="checkbox" @(item.IsActive ? "checked" : "")
+                                           onclick="toggleUserStatus(@item.Id)" style="cursor:pointer;accent-color:var(--accent);"
+                                           @(item.Id == currentUserId ? "disabled" : "") title="@(item.Id == currentUserId ? "You cannot deactivate your own account" : "")">
+                                </div>
+                                @if (item.IsActive)
+                                {
+                                    <span class="status-badge badge-active">Active</span>
+                                }
+                                else
+                                {
+                                    <span class="status-badge badge-inactive">Inactive</span>
+                                }
+                            </div>
+                        </td>
+                        <td class="text-end">
+                            <button class="btn-sm-icon @(item.Role == GiftStoreMVC.Models.UserRole.Admin ? "disabled" : "")"
+                                    style="background:#fee2e2;color:#ef4444;@(item.Role == GiftStoreMVC.Models.UserRole.Admin ? "opacity:0.4;cursor:not-allowed;" : "")"
+                                    onclick="deleteUser(@item.Id)" title="Delete User"
+                                    @(item.Role == GiftStoreMVC.Models.UserRole.Admin ? "disabled" : "")>
+                                <i class="bi bi-trash-fill"></i>
+                            </button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        function toggleUserStatus(id) {
+            $.post('/Admin/User/ToggleStatus/' + id, function (res) {
+                if (res.success) {
+                    location.reload();
+                } else {
+                    Swal.fire('Error', res.message, 'error').then(() => { location.reload(); });
+                }
+            });
+        }
+        function deleteUser(id) {
+            Swal.fire({
+                title: 'Delete User?',
+                text: "Their orders and reviews will also be affected.",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#ef4444',
+                cancelButtonColor: '#6b7280',
+                confirmButtonText: 'Yes, delete',
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    $.post('/Admin/User/Delete/' + id, function (res) {
+                        if (res.success) {
+                            $('#row-' + id).fadeOut(300);
+                            Swal.fire({ title: 'Deleted!', icon: 'success', timer: 1200, showConfirmButton: false });
+                        } else {
+                            Swal.fire('Error', res.message, 'error');
+                        }
+                    });
+                }
+            });
+        }
+    </script>
+}

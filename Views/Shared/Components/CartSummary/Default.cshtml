@@ -1,0 +1,12 @@
+<a asp-area="" asp-controller="Cart" asp-action="Index" class="btn btn-link text-dark p-2 d-flex align-items-center text-decoration-none gap-2">
+    <div class="position-relative d-flex align-items-center justify-content-center">
+        <i class="bi bi-bag" style="font-size:1.1rem;"></i>
+        @if(ViewBag.Count > 0)
+        {
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark" style="font-size: 0.6rem; padding: 2px 5px; border: 1px solid #fff;">@ViewBag.Count</span>
+        }
+    </div>
+    <div class="d-none d-lg-block text-start">
+        <span class="fw-bold" style="font-size: 0.85rem;">@(((decimal)ViewBag.Total).ToString("C"))</span>
+    </div>
+</a>

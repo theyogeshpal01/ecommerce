@@ -1,0 +1,155 @@
+@model IEnumerable<GiftStoreMVC.Models.Order>
+@{
+    ViewData["Title"] = "Dashboard";
+    Layout = "_AdminLayout";
+}
+
+<!-- STAT CARDS -->
+<div class="row g-4 mb-5">
+    <div class="col-sm-6 col-xl-3">
+        <div class="stat-card">
+            <div class="stat-icon" style="background:#ede9fe;color:#7c3aed;">
+                <i class="bi bi-box-seam-fill"></i>
+            </div>
+            <div class="stat-value">@ViewBag.TotalProducts</div>
+            <div class="stat-label">Total Products</div>
+            <div class="stat-change up"><i class="bi bi-arrow-up-short"></i> Active listings</div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-xl-3">
+        <div class="stat-card">
+            <div class="stat-icon" style="background:#d1fae5;color:#059669;">
+                <i class="bi bi-bag-check-fill"></i>
+            </div>
+            <div class="stat-value">@ViewBag.TotalOrders</div>
+            <div class="stat-label">Total Orders</div>
+            <div class="stat-change up"><i class="bi bi-arrow-up-short"></i> All time</div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-xl-3">
+        <div class="stat-card">
+            <div class="stat-icon" style="background:#dbeafe;color:#2563eb;">
+                <i class="bi bi-currency-rupee"></i>
+            </div>
+            <div class="stat-value" style="font-size:1.5rem;">₹@(((decimal)ViewBag.TotalRevenue).ToString("N0"))</div>
+            <div class="stat-label">Total Revenue</div>
+            <div class="stat-change up"><i class="bi bi-arrow-up-short"></i> Lifetime earnings</div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-xl-3">
+        <div class="stat-card">
+            <div class="stat-icon" style="background:#fef3c7;color:#d97706;">
+                <i class="bi bi-people-fill"></i>
+            </div>
+            <div class="stat-value">@ViewBag.TotalUsers</div>
+            <div class="stat-label">Registered Users</div>
+            <div class="stat-change up"><i class="bi bi-arrow-up-short"></i> Growing community</div>
+        </div>
+    </div>
+</div>
+
+<!-- QUICK ALERTS ROW -->
+<div class="row g-4 mb-5">
+    <div class="col-md-6">
+        <div class="admin-card h-100">
+            <div class="admin-card-header">
+                <h6><i class="bi bi-clock-history me-2 text-warning"></i>Pending Orders</h6>
+                <a asp-controller="Order" asp-action="Index" class="btn btn-sm btn-outline-accent px-3">View All</a>
+            </div>
+            <div class="admin-card-body d-flex align-items-center gap-4">
+                <div style="font-size:3rem;font-weight:800;color:#d97706;">@ViewBag.PendingOrders</div>
+                <div>
+                    <p class="mb-1 fw-600" style="font-size:0.9rem;">Orders awaiting confirmation</p>
+                    <p class="text-muted mb-0" style="font-size:0.8rem;">Review and update their status promptly.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="admin-card h-100">
+            <div class="admin-card-header">
+                <h6><i class="bi bi-star-fill me-2 text-warning"></i>Pending Reviews</h6>
+                <a asp-controller="Review" asp-action="Index" class="btn btn-sm btn-outline-accent px-3">View All</a>
+            </div>
+            <div class="admin-card-body d-flex align-items-center gap-4">
+                <div style="font-size:3rem;font-weight:800;color:#7c3aed;">@ViewBag.PendingReviews</div>
+                <div>
+                    <p class="mb-1 fw-600" style="font-size:0.9rem;">Reviews awaiting approval</p>
+                    <p class="text-muted mb-0" style="font-size:0.8rem;">Approve or reject customer reviews.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- RECENT ORDERS TABLE -->
+<div class="admin-card">
+    <div class="admin-card-header">
+        <h6><i class="bi bi-receipt me-2" style="color:var(--accent);"></i>Recent Orders</h6>
+        <a asp-controller="Order" asp-action="Index" class="btn btn-sm btn-outline-accent px-3">See All</a>
+    </div>
+    <div style="overflow-x:auto;">
+        <table class="admin-table">
+            <thead>
+                <tr>
+                    <th>Order #</th>
+                    <th>Customer</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                    <th>Date</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var order in Model)
+                {
+                    <tr>
+                        <td><span class="fw-700" style="color:var(--accent);">#@order.OrderNumber</span></td>
+                        <td>
+                            <div class="d-flex align-items-center gap-2">
+                                <div style="width:32px;height:32px;border-radius:8px;background:linear-gradient(135deg,#ede9fe,#dbeafe);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.8rem;color:#7c3aed;flex-shrink:0;">
+                                    @(order.User?.FullName?.Substring(0,1).ToUpper() ?? "?")
+                                </div>
+                                <div>
+                                    <div class="fw-600" style="font-size:0.875rem;">@order.User?.FullName</div>
+                                    <div class="text-muted" style="font-size:0.75rem;">@order.User?.Email</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="fw-700">₹@order.TotalAmount.ToString("N2")</td>
+                        <td>
+                            @switch (order.Status)
+                            {
+                                case GiftStoreMVC.Models.OrderStatus.Pending:
+                                    <span class="status-badge badge-pending">Pending</span>
+                                    break;
+                                case GiftStoreMVC.Models.OrderStatus.Confirmed:
+                                    <span class="status-badge badge-confirmed">Confirmed</span>
+                                    break;
+                                case GiftStoreMVC.Models.OrderStatus.Shipped:
+                                    <span class="status-badge badge-shipped">Shipped</span>
+                                    break;
+                                case GiftStoreMVC.Models.OrderStatus.Delivered:
+                                    <span class="status-badge badge-delivered">Delivered</span>
+                                    break;
+                                case GiftStoreMVC.Models.OrderStatus.Cancelled:
+                                    <span class="status-badge badge-cancelled">Cancelled</span>
+                                    break;
+                                default:
+                                    <span class="status-badge badge-inactive">@order.Status</span>
+                                    break;
+                            }
+                        </td>
+                        <td class="text-muted" style="font-size:0.8rem;">@order.OrderDate.ToString("MMM dd, yyyy")</td>
+                        <td>
+                            <a asp-controller="Order" asp-action="Details" asp-route-id="@order.Id"
+                               class="btn-sm-icon btn-outline-accent" title="View Details" style="text-decoration:none;">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

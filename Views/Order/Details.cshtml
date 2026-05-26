@@ -1,0 +1,84 @@
+@model GiftStoreMVC.Models.Order
+@{
+    ViewData["Title"] = "Order Details";
+}
+
+<div class="container py-5">
+    <nav aria-label="breadcrumb" class="mb-5">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+            <li class="breadcrumb-item"><a asp-controller="Order" asp-action="History">My Orders</a></li>
+            <li class="breadcrumb-item active">Order #@Model.Id</li>
+        </ol>
+    </nav>
+
+    <div class="row g-5">
+        <div class="col-lg-8">
+            <div class="card border-0 shadow-sm rounded-4 p-4 mb-4">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h4 class="fw-bold mb-0">Order Items</h4>
+                    <span class="badge @(Model.Status == GiftStoreMVC.Models.OrderStatus.Delivered ? "bg-success" : "bg-warning") rounded-pill px-3 py-2">
+                        @Model.Status
+                    </span>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table align-middle">
+                        <thead>
+                            <tr class="text-muted small">
+                                <th>PRODUCT</th>
+                                <th>PRICE</th>
+                                <th>QTY</th>
+                                <th class="text-end">TOTAL</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.OrderItems)
+                            {
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <img src="@item.Product.CoverImageUrl" class="rounded border me-3" style="width: 50px; height: 50px; object-fit: contain;">
+                                            <span class="fw-bold">@item.Product.Name</span>
+                                        </div>
+                                    </td>
+                                    <td>@item.Price.ToString("C")</td>
+                                    <td>@item.Quantity</td>
+                                    <td class="text-end fw-bold">@((item.Price * item.Quantity).ToString("C"))</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="card border-0 shadow-sm rounded-4 p-4 mb-4">
+                <h5 class="fw-bold mb-4">Order Summary</h5>
+                <div class="d-flex justify-content-between mb-3 small">
+                    <span class="text-muted">Subtotal</span>
+                    <span class="fw-bold">@((Model.TotalAmount > 50 ? Model.TotalAmount : Model.TotalAmount - 5).ToString("C"))</span>
+                </div>
+                <div class="d-flex justify-content-between mb-3 small">
+                    <span class="text-muted">Shipping</span>
+                    <span class="text-success fw-bold">@(Model.TotalAmount > 50 ? "Free" : "$5.00")</span>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between mt-3">
+                    <h5 class="fw-bold">Total</h5>
+                    <h5 class="fw-bold text-primary">@Model.TotalAmount.ToString("C")</h5>
+                </div>
+            </div>
+
+            <div class="card border-0 shadow-sm rounded-4 p-4">
+                <h5 class="fw-bold mb-4">Shipping Info</h5>
+                <p class="small mb-1 fw-bold">Address:</p>
+                <p class="small text-muted mb-4">@Model.ShippingAddress</p>
+                
+                <p class="small mb-1 fw-bold">Payment Method:</p>
+                <p class="small text-muted mb-0">@Model.PaymentMethod</p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,438 @@
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\obj\Debug\net8.0\GiftStoreMVC.csproj.AssemblyReference.cache
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\obj\Debug\net8.0\GiftStoreMVC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\obj\Debug\net8.0\GiftStoreMVC.AssemblyInfoInputs.cache
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\obj\Debug\net8.0\GiftStoreMVC.AssemblyInfo.cs
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\obj\Debug\net8.0\GiftStoreMVC.csproj.CoreCompileInputs.cache
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\obj\Debug\net8.0\GiftStoreMVC.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\obj\Debug\net8.0\GiftStoreMVC.RazorAssemblyInfo.cache
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\obj\Debug\net8.0\GiftStoreMVC.RazorAssemblyInfo.cs
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\appsettings.json
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\GiftStoreMVC.staticwebassets.runtime.json
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\GiftStoreMVC.staticwebassets.endpoints.json
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\GiftStoreMVC.exe
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\GiftStoreMVC.deps.json
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\GiftStoreMVC.runtimeconfig.json
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\GiftStoreMVC.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\GiftStoreMVC.pdb
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\Humanizer.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\obj\Debug\net8.0\scopedcss\bundle\GiftStoreMVC.styles.css
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\obj\Debug\net8.0\scopedcss\projectbundle\GiftStoreMVC.bundle.scp.css
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\obj\Debug\net8.0\swae.build.ex.cache
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\obj\Debug\net8.0\GiftStor.93B4C1BD.Up2Date
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\obj\Debug\net8.0\GiftStoreMVC.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\obj\Debug\net8.0\refint\GiftStoreMVC.dll
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\obj\Debug\net8.0\GiftStoreMVC.pdb
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\obj\Debug\net8.0\GiftStoreMVC.genruntimeconfig.cache
+C:\Users\palyo\OneDrive\Desktop\Folder2\GiftStoreMVC\obj\Debug\net8.0\ref\GiftStoreMVC.dll
+C:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\obj\Debug\net8.0\GiftStoreMVC.csproj.AssemblyReference.cache
+C:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\obj\Debug\net8.0\GiftStoreMVC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\obj\Debug\net8.0\GiftStoreMVC.AssemblyInfoInputs.cache
+C:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\obj\Debug\net8.0\GiftStoreMVC.AssemblyInfo.cs
+C:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\obj\Debug\net8.0\GiftStoreMVC.csproj.CoreCompileInputs.cache
+C:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\obj\Debug\net8.0\GiftStoreMVC.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\obj\Debug\net8.0\GiftStoreMVC.RazorAssemblyInfo.cache
+C:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\obj\Debug\net8.0\GiftStoreMVC.RazorAssemblyInfo.cs
+C:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\obj\Debug\net8.0\GiftStoreMVC.dll
+C:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\obj\Debug\net8.0\refint\GiftStoreMVC.dll
+C:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\obj\Debug\net8.0\GiftStoreMVC.pdb
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\appsettings.Development.json
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\appsettings.json
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\GiftStoreMVC.staticwebassets.runtime.json
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\GiftStoreMVC.staticwebassets.endpoints.json
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\GiftStoreMVC.exe
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\GiftStoreMVC.deps.json
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\GiftStoreMVC.runtimeconfig.json
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\GiftStoreMVC.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\GiftStoreMVC.pdb
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\Azure.Core.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\Azure.Identity.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\BCrypt.Net-Next.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\Humanizer.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\Mono.TextTemplating.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\System.CodeDom.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\System.Composition.Convention.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\System.Composition.Hosting.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\System.Composition.Runtime.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\System.Composition.TypedParts.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\System.Drawing.Common.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\System.Memory.Data.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\System.Runtime.Caching.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\System.Security.Permissions.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\System.Windows.Extensions.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\obj\Debug\net8.0\rjimswa.dswa.cache.json
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\obj\Debug\net8.0\scopedcss\bundle\GiftStoreMVC.styles.css
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\obj\Debug\net8.0\scopedcss\projectbundle\GiftStoreMVC.bundle.scp.css
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\obj\Debug\net8.0\staticwebassets.build.json
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\obj\Debug\net8.0\staticwebassets.build.json.cache
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\obj\Debug\net8.0\staticwebassets.development.json
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\obj\Debug\net8.0\GiftStor.93B4C1BD.Up2Date
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\obj\Debug\net8.0\GiftStoreMVC.genruntimeconfig.cache
+c:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\obj\Debug\net8.0\ref\GiftStoreMVC.dll
+C:\Users\kriti Malviya\Desktop\GiftStoreMVC\GiftStoreMVC\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\appsettings.json
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\GiftStoreMVC.staticwebassets.runtime.json
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\GiftStoreMVC.staticwebassets.endpoints.json
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\GiftStoreMVC.exe
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\GiftStoreMVC.deps.json
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\GiftStoreMVC.runtimeconfig.json
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\GiftStoreMVC.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\GiftStoreMVC.pdb
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\Humanizer.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\obj\Debug\net8.0\GiftStoreMVC.csproj.AssemblyReference.cache
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\obj\Debug\net8.0\GiftStoreMVC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\obj\Debug\net8.0\GiftStoreMVC.AssemblyInfoInputs.cache
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\obj\Debug\net8.0\GiftStoreMVC.AssemblyInfo.cs
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\obj\Debug\net8.0\GiftStoreMVC.csproj.CoreCompileInputs.cache
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\obj\Debug\net8.0\GiftStoreMVC.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\obj\Debug\net8.0\GiftStoreMVC.RazorAssemblyInfo.cache
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\obj\Debug\net8.0\GiftStoreMVC.RazorAssemblyInfo.cs
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\obj\Debug\net8.0\scopedcss\bundle\GiftStoreMVC.styles.css
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\obj\Debug\net8.0\scopedcss\projectbundle\GiftStoreMVC.bundle.scp.css
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\obj\Debug\net8.0\swae.build.ex.cache
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\obj\Debug\net8.0\GiftStor.93B4C1BD.Up2Date
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\obj\Debug\net8.0\GiftStoreMVC.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\obj\Debug\net8.0\refint\GiftStoreMVC.dll
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\obj\Debug\net8.0\GiftStoreMVC.pdb
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\obj\Debug\net8.0\GiftStoreMVC.genruntimeconfig.cache
+C:\Users\palyo\OneDrive\Desktop\GiftStoreMVC\obj\Debug\net8.0\ref\GiftStoreMVC.dll

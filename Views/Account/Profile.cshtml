@@ -1,0 +1,114 @@
+@model GiftStoreMVC.Models.User
+@{
+    ViewData["Title"] = "My Account";
+}
+
+<div class="container py-5">
+    <nav aria-label="breadcrumb" class="mb-5">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+            <li class="breadcrumb-item active">My Account</li>
+        </ol>
+    </nav>
+
+    <div class="row g-5">
+        <!-- Sidebar -->
+        <div class="col-lg-3">
+            <div class="bg-light p-4 rounded-4 shadow-sm">
+                <div class="text-center mb-4">
+                    <div class="position-relative d-inline-block">
+                        <img src="https://ui-avatars.com/api/?name=@Model.FullName&background=ff4d30&color=fff&size=128" class="rounded-circle shadow-sm" style="width: 100px;">
+                        <button class="btn btn-white btn-sm rounded-circle shadow-sm position-absolute bottom-0 end-0 border"><i class="bi bi-camera"></i></button>
+                    </div>
+                    <h5 class="fw-bold mt-3 mb-0">@Model.FullName</h5>
+                    <small class="text-muted">@Model.Email</small>
+                </div>
+
+                <div class="list-group list-group-flush bg-transparent">
+                    @if (Model.Role != GiftStoreMVC.Models.UserRole.Admin)
+                    {
+                        <a asp-controller="Order" asp-action="History" class="list-group-item list-group-item-action bg-transparent border-0 py-3 px-0 d-flex align-items-center">
+                            <i class="bi bi-bag me-3 text-muted"></i> Orders
+                        </a>
+                        <a asp-controller="Cart" asp-action="Index" class="list-group-item list-group-item-action bg-transparent border-0 py-3 px-0 d-flex align-items-center">
+                            <i class="bi bi-cart me-3 text-muted"></i> Cart
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 py-3 px-0 d-flex align-items-center">
+                            <i class="bi bi-geo-alt me-3 text-muted"></i> Address
+                        </a>
+                    }
+                    <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 py-3 px-0 d-flex align-items-center active text-primary fw-bold" style="background: transparent !important;">
+                        <i class="bi bi-person me-3"></i> Account Details
+                    </a>
+                    <hr class="my-2">
+                    <a asp-controller="Account" asp-action="Logout" class="list-group-item list-group-item-action bg-transparent border-0 py-3 px-0 d-flex align-items-center text-danger fw-bold">
+                        <i class="bi bi-box-arrow-right me-3"></i> Log Out
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="col-lg-9">
+            @if (TempData["Success"] != null)
+            {
+                <div class="alert alert-success">@TempData["Success"]</div>
+            }
+
+            @if (Model.Role != GiftStoreMVC.Models.UserRole.Admin)
+            {
+                <div class="row g-4 mb-5">
+                    <div class="col-md-6">
+                        <div class="border rounded-4 p-4 d-flex align-items-center shadow-sm">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-3 me-4 text-primary">
+                                <i class="bi bi-box-seam fs-3"></i>
+                            </div>
+                            <div>
+                                <h4 class="fw-bold mb-0">Order Tracking</h4>
+                                <p class="text-muted small mb-0">See your order history.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="border rounded-4 p-4 d-flex align-items-center shadow-sm">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-3 me-4 text-primary">
+                                <i class="bi bi-house-door fs-3"></i>
+                            </div>
+                            <div>
+                                <h4 class="fw-bold mb-0">Billing Address</h4>
+                                <p class="text-muted small mb-0">Set your billing address.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+
+            <div class="card border-0 shadow-sm rounded-4 p-4">
+                <h4 class="fw-bold mb-4 border-bottom pb-2">Account Details</h4>
+                <form method="post" asp-action="Profile">
+                    <div class="row g-4">
+                        <div class="col-md-12">
+                            <label class="form-label small fw-bold text-muted">Full Name</label>
+                            <input type="text" name="FullName" class="form-control form-control-custom" value="@Model.FullName" required>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="form-label small fw-bold text-muted">Email Address (Read Only)</label>
+                            <input type="email" class="form-control form-control-custom bg-light" value="@Model.Email" readonly>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label small fw-bold text-muted">Phone Number</label>
+                            <input type="text" name="PhoneNumber" class="form-control form-control-custom" value="@Model.PhoneNumber">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label small fw-bold text-muted">Address</label>
+                            <input type="text" name="Address" class="form-control form-control-custom" value="@Model.Address">
+                        </div>
+                        <div class="col-12 mt-5">
+                            <button type="submit" class="btn btn-primary-custom px-5 py-3 rounded-3">Save Changes</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

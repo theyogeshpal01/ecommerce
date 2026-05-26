@@ -1,0 +1,33 @@
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
+<ul class="navbar-nav">
+    @if (HttpContextAccessor.HttpContext.Session.GetInt32("UserId") != null)
+    {
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-dark" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-person-circle"></i> @HttpContextAccessor.HttpContext.Session.GetString("UserName")
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                <li><a class="dropdown-item" asp-controller="Account" asp-action="Profile">Profile</a></li>
+                <li><a class="dropdown-item" asp-controller="Order" asp-action="History">My Orders</a></li>
+                @if (HttpContextAccessor.HttpContext.Session.GetString("UserRole") == "Admin")
+                {
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item text-danger" asp-controller="Dashboard" asp-action="Index">Admin Panel</a></li>
+                }
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" asp-controller="Account" asp-action="Logout">Logout</a></li>
+            </ul>
+        </li>
+    }
+    else
+    {
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-controller="Account" asp-action="Login">Login</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link btn btn-primary text-white ms-lg-2" asp-controller="Account" asp-action="Register">Register</a>
+        </li>
+    }
+</ul>

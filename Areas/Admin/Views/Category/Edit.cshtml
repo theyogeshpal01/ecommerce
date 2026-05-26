@@ -1,0 +1,48 @@
+@model GiftStoreMVC.Models.Category
+@{
+    ViewData["Title"] = "Edit Category";
+    Layout = "_AdminLayout";
+}
+
+<div class="row justify-content-center">
+    <div class="col-lg-6">
+        <div class="admin-card">
+            <div class="admin-card-header d-flex align-items-center">
+                <a asp-action="Index" class="btn-sm-icon btn-outline-accent me-3" title="Back to Categories"><i class="bi bi-arrow-left"></i></a>
+                <h6 class="mb-0"><i class="bi bi-pencil-fill me-2" style="color:var(--accent);"></i>Edit Category</h6>
+            </div>
+            <div class="admin-card-body">
+                <form asp-action="Edit" method="post" enctype="multipart/form-data">
+                    <input type="hidden" name="Id" value="@Model.Id" />
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Category Name <span class="text-danger">*</span></label>
+                        <input name="Name" class="form-control" value="@Model.Name" required />
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Description</label>
+                        <textarea name="Description" class="form-control" rows="3">@Model.Description</textarea>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label">Category Image</label>
+                        @if (!string.IsNullOrEmpty(Model.ImageUrl))
+                        {
+                            <div class="mb-2">
+                                <img src="@Model.ImageUrl" alt="Current Image" style="height: 80px; width: 80px; object-fit: cover; border-radius: 8px; border: 1px solid var(--border);" />
+                                <div class="text-muted small mt-1">Current Image</div>
+                            </div>
+                        }
+                        <input type="file" name="imageFile" class="form-control" accept="image/*" />
+                        <p class="text-muted mt-1 mb-0" style="font-size:0.75rem;">Upload a new image to replace the current one. Leave empty to keep the existing image.</p>
+                    </div>
+
+                    <button type="submit" class="btn btn-accent w-100 py-2 fw-600">
+                        <i class="bi bi-check2 me-2"></i>Save Changes
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

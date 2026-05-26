@@ -1,0 +1,119 @@
+@model IEnumerable<GiftStoreMVC.Models.Product>
+@{
+    ViewData["Title"] = "Manage Products";
+    Layout = "_AdminLayout";
+}
+
+<div class="admin-card">
+    <div class="admin-card-header">
+        <h6><i class="bi bi-box-seam-fill me-2" style="color:var(--accent);"></i>Products <span class="text-muted fw-400" style="font-size:0.8rem;">(@Model.Count())</span></h6>
+        <a asp-action="Create" class="btn btn-accent px-4 py-2" style="font-size:0.82rem;">
+            <i class="bi bi-plus-lg me-1"></i> Add Product
+        </a>
+    </div>
+    <div style="overflow-x:auto;">
+        <table class="admin-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                    <th>Featured</th>
+                    <th class="text-end">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr id="row-@item.Id">
+                        <td>
+                            <div class="d-flex align-items-center gap-3">
+                                <img src="@(string.IsNullOrEmpty(item.CoverImageUrl) ? "https://placehold.co/48x48/f3f4f6/9ca3af?text=P" : item.CoverImageUrl)"
+                                     class="rounded-2" style="width:48px;height:48px;object-fit:cover;border:1px solid #f3f4f6;flex-shrink:0;">
+                                <div>
+                                    <div class="fw-600" style="font-size:0.875rem;">@item.Name</div>
+                                    <div class="text-muted" style="font-size:0.75rem;">ID: #@item.Id</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <span style="background:#ede9fe;color:#7c3aed;padding:3px 10px;border-radius:6px;font-size:0.75rem;font-weight:600;">
+                                @(item.Category?.Name ?? "—")
+                            </span>
+                        </td>
+                        <td class="fw-700">₹@item.Price.ToString("N2")</td>
+                        <td>
+                            @if (item.StockQuantity > 10)
+                            {
+                                <span class="status-badge badge-delivered">@item.StockQuantity in stock</span>
+                            }
+                            else if (item.StockQuantity > 0)
+                            {
+                                <span class="status-badge badge-pending">Low: @item.StockQuantity</span>
+                            }
+                            else
+                            {
+                                <span class="status-badge badge-cancelled">Out of Stock</span>
+                            }
+                        </td>
+                        <td>
+                            @if (item.IsFeatured)
+                            {
+                                <i class="bi bi-star-fill" style="color:#f59e0b;font-size:1rem;"></i>
+                            }
+                            else
+                            {
+                                <i class="bi bi-star" style="color:#d1d5db;font-size:1rem;"></i>
+                            }
+                        </td>
+                        <td class="text-end">
+                            <div class="d-flex justify-content-end gap-2">
+                                <a asp-action="Edit" asp-route-id="@item.Id"
+                                   class="btn-sm-icon" style="background:#ede9fe;color:#7c3aed;" title="Edit">
+                                    <i class="bi bi-pencil-fill"></i>
+                                </a>
+                                <button class="btn-sm-icon" style="background:#fee2e2;color:#ef4444;" title="Delete"
+                                        onclick="deleteProduct(@item.Id)">
+                                    <i class="bi bi-trash-fill"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        function deleteProduct(id) {
+            Swal.fire({
+                title: 'Delete Product?',
+                text: "This action cannot be undone.",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#ef4444',
+                cancelButtonColor: '#6b7280',
+                confirmButtonText: 'Yes, delete',
+                cancelButtonText: 'Cancel',
+                borderRadius: '16px'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    $.ajax({
+                        url: '/Admin/Product/Delete/' + id,
+                        type: 'POST',
+                        success: function (res) {
+                            if (res.success) {
+                                $('#row-' + id).fadeOut(300);
+                                Swal.fire({ title: 'Deleted!', text: 'Product removed.', icon: 'success', timer: 1500, showConfirmButton: false });
+                            }
+                        }
+                    });
+                }
+            });
+        }
+    </script>
+}

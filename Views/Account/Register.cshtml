@@ -1,0 +1,79 @@
+@model GiftStoreMVC.ViewModels.RegisterViewModel
+@{
+    ViewData["Title"] = "Create Account";
+}
+
+<div class="min-vh-100 d-flex align-items-center py-5" style="background: linear-gradient(135deg, #f8f7ff 0%, #fdf2f8 100%);">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8">
+                <div class="text-center mb-4 animate-up">
+                    <a asp-controller="Home" asp-action="Index" class="text-decoration-none">
+                        <h2 class="fw-800" style="font-size:2rem;letter-spacing:-1px;">Presento<span class="text-accent">.</span></h2>
+                    </a>
+                    <p class="text-muted mt-1" style="font-size:0.9rem;">Create your account and start gifting</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-4 p-md-5 shadow-sm animate-up" style="animation-delay:0.1s;">
+                    <h4 class="fw-700 mb-1">Join Presento</h4>
+                    <p class="text-muted mb-4" style="font-size:0.875rem;">Fill in your details to get started</p>
+
+                    <form asp-action="Register" method="post">
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger mb-3" style="font-size:0.85rem;"></div>
+
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6">
+                                <label asp-for="FullName" class="form-label">Full Name</label>
+                                <input asp-for="FullName" class="form-control" placeholder="John Doe" />
+                                <span asp-validation-for="FullName" class="text-danger" style="font-size:0.78rem;"></span>
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="Email" class="form-label">Email Address</label>
+                                <input asp-for="Email" class="form-control" placeholder="john@example.com" />
+                                <span asp-validation-for="Email" class="text-danger" style="font-size:0.78rem;"></span>
+                            </div>
+                        </div>
+
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6">
+                                <label asp-for="Password" class="form-label">Password</label>
+                                <input asp-for="Password" class="form-control" type="password" placeholder="Min. 6 characters" />
+                                <span asp-validation-for="Password" class="text-danger" style="font-size:0.78rem;"></span>
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="ConfirmPassword" class="form-label">Confirm Password</label>
+                                <input asp-for="ConfirmPassword" class="form-control" type="password" placeholder="Repeat password" />
+                                <span asp-validation-for="ConfirmPassword" class="text-danger" style="font-size:0.78rem;"></span>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="PhoneNumber" class="form-label">Phone Number</label>
+                            <input asp-for="PhoneNumber" class="form-control" placeholder="+91 98765 43210" />
+                            <span asp-validation-for="PhoneNumber" class="text-danger" style="font-size:0.78rem;"></span>
+                        </div>
+
+                        <div class="mb-4">
+                            <label asp-for="Address" class="form-label">Address</label>
+                            <textarea asp-for="Address" class="form-control" rows="2" placeholder="Your delivery address"></textarea>
+                            <span asp-validation-for="Address" class="text-danger" style="font-size:0.78rem;"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-accent w-100 py-3 fw-600 mb-3" style="border-radius:12px;font-size:0.95rem;">
+                            Create Account <i class="bi bi-arrow-right ms-2"></i>
+                        </button>
+
+                        <p class="text-center text-muted mb-0" style="font-size:0.85rem;">
+                            Already have an account?
+                            <a asp-action="Login" class="fw-600 text-decoration-none" style="color:var(--accent);">Sign in</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

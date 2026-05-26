@@ -1,0 +1,146 @@
+@model GiftStoreMVC.Models.Order
+@{
+    ViewData["Title"] = "Order #" + Model.OrderNumber;
+    Layout = "_AdminLayout";
+}
+
+<div class="row g-4">
+    <!-- LEFT: Items + Shipping -->
+    <div class="col-lg-8">
+        <!-- Order Items -->
+        <div class="admin-card mb-4">
+            <div class="admin-card-header">
+                <h6><i class="bi bi-box-seam me-2" style="color:var(--accent);"></i>Items in Order</h6>
+                <span class="text-muted" style="font-size:0.8rem;">@Model.OrderDate.ToString("MMMM dd, yyyy · hh:mm tt")</span>
+            </div>
+            <div style="overflow-x:auto;">
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Unit Price</th>
+                            <th>Qty</th>
+                            <th class="text-end">Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.OrderItems)
+                        {
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center gap-3">
+                                        <img src="@item.Product?.CoverImageUrl" class="rounded-2"
+                                             style="width:48px;height:48px;object-fit:cover;border:1px solid #f3f4f6;">
+                                        <div>
+                                            <div class="fw-600" style="font-size:0.875rem;">@item.Product?.Name</div>
+                                            <div class="text-muted" style="font-size:0.75rem;">ID: @item.ProductId</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>₹@item.Price.ToString("N2")</td>
+                                <td>
+                                    <span class="fw-700" style="background:#f3f4f6;padding:3px 10px;border-radius:6px;font-size:0.85rem;">
+                                        ×@item.Quantity
+                                    </span>
+                                </td>
+                                <td class="text-end fw-700">₹@((item.Price * item.Quantity).ToString("N2"))</td>
+                            </tr>
+                        }
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3" class="text-end fw-700 py-4" style="font-size:0.9rem;">Order Total</td>
+                            <td class="text-end fw-800 py-4" style="font-size:1.2rem;color:var(--accent);">
+                                ₹@Model.TotalAmount.ToString("N2")
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+
+        <!-- Shipping & Payment -->
+        <div class="admin-card">
+            <div class="admin-card-header">
+                <h6><i class="bi bi-truck me-2" style="color:var(--accent);"></i>Shipping & Payment</h6>
+            </div>
+            <div class="admin-card-body">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <p class="text-muted mb-2" style="font-size:0.72rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;">Shipping Address</p>
+                        <p class="fw-500 mb-0" style="font-size:0.875rem;line-height:1.7;">@Model.ShippingAddress</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="text-muted mb-2" style="font-size:0.72rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;">Payment Details</p>
+                        <p class="mb-1" style="font-size:0.875rem;">Method: <strong>@Model.PaymentMethod</strong></p>
+                        <span class="status-badge badge-delivered">Paid</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- RIGHT: Status Management -->
+    <div class="col-lg-4">
+        <div class="admin-card" style="position:sticky;top:80px;">
+            <div class="admin-card-header">
+                <h6><i class="bi bi-sliders me-2" style="color:var(--accent);"></i>Manage Order</h6>
+            </div>
+            <div class="admin-card-body">
+                <!-- Customer Info -->
+                <div class="d-flex align-items-center gap-3 p-3 rounded-2 mb-4" style="background:#f8f7ff;">
+                    <div style="width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,#ede9fe,#dbeafe);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1rem;color:#7c3aed;flex-shrink:0;">
+                        @(Model.User?.FullName?.Substring(0,1).ToUpper() ?? "?")
+                    </div>
+                    <div>
+                        <div class="fw-700" style="font-size:0.9rem;">@Model.User?.FullName</div>
+                        <div class="text-muted" style="font-size:0.78rem;">@Model.User?.Email</div>
+                    </div>
+                </div>
+
+                <!-- Current Status -->
+                <div class="mb-4">
+                    <p class="text-muted mb-2" style="font-size:0.72rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;">Current Status</p>
+                    <div class="p-3 rounded-2 text-center" style="background:#f8f7ff;border:1.5px dashed #e5e7eb;">
+                        @switch (Model.Status)
+                        {
+                            case GiftStoreMVC.Models.OrderStatus.Pending:
+                                <span class="status-badge badge-pending" style="font-size:0.85rem;padding:6px 16px;">Pending</span>
+                                break;
+                            case GiftStoreMVC.Models.OrderStatus.Confirmed:
+                                <span class="status-badge badge-confirmed" style="font-size:0.85rem;padding:6px 16px;">Confirmed</span>
+                                break;
+                            case GiftStoreMVC.Models.OrderStatus.Shipped:
+                                <span class="status-badge badge-shipped" style="font-size:0.85rem;padding:6px 16px;">Shipped</span>
+                                break;
+                            case GiftStoreMVC.Models.OrderStatus.Delivered:
+                                <span class="status-badge badge-delivered" style="font-size:0.85rem;padding:6px 16px;">Delivered</span>
+                                break;
+                            case GiftStoreMVC.Models.OrderStatus.Cancelled:
+                                <span class="status-badge badge-cancelled" style="font-size:0.85rem;padding:6px 16px;">Cancelled</span>
+                                break;
+                        }
+                    </div>
+                </div>
+
+                <!-- Update Status Form -->
+                <form asp-action="UpdateStatus" method="post">
+                    <input type="hidden" name="orderId" value="@Model.Id" />
+                    <div class="mb-3">
+                        <label class="form-label">Update Status</label>
+                        <select name="status" class="form-select" asp-items="Html.GetEnumSelectList<GiftStoreMVC.Models.OrderStatus>()"></select>
+                    </div>
+                    <button type="submit" class="btn btn-accent w-100 py-2 fw-600">
+                        <i class="bi bi-check2-circle me-2"></i>Update Status
+                    </button>
+                </form>
+
+                <hr class="my-4" style="border-color:#f3f4f6;">
+
+                <a asp-action="Index" class="btn w-100 py-2 fw-600" style="background:#f3f4f6;color:#374151;border-radius:10px;font-size:0.875rem;text-decoration:none;display:block;text-align:center;">
+                    <i class="bi bi-arrow-left me-2"></i>Back to Orders
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

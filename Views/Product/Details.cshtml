@@ -1,0 +1,285 @@
+@model GiftStoreMVC.Models.Product
+@using Microsoft.AspNetCore.Http
+@{
+    ViewData["Title"] = Model.Name;
+    var reviews = Model.Reviews?.Where(r => r.IsApproved).OrderByDescending(r => r.CreatedAt).ToList() ?? new List<GiftStoreMVC.Models.Review>();
+    var reviewCount = reviews.Count;
+    var avgRating = reviewCount > 0 ? Math.Round(reviews.Average(r => r.Rating), 1) : 0;
+    var userId = Context.Session.GetInt32("UserId");
+    var hasReviewed = userId != null && Model.Reviews?.Any(r => r.UserId == userId.Value) == true;
+}
+
+<div class="container py-5">
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" class="mb-5 animate-up">
+        <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index" class="text-decoration-none text-muted">Home</a></li>
+            <li class="breadcrumb-item"><a asp-controller="Product" asp-action="Index" class="text-decoration-none text-muted">Products</a></li>
+            <li class="breadcrumb-item active fw-bold text-dark">@Model.Name</li>
+        </ol>
+    </nav>
+
+    <div class="row g-5 mb-5 align-items-start">
+        <!-- Image Gallery -->
+        <div class="col-lg-7 animate-up">
+            <div class="card border-0 bg-light rounded-5 p-5 text-center mb-4 shadow-sm overflow-hidden group">
+                <img id="mainImg" src="@(string.IsNullOrEmpty(Model.CoverImageUrl) ? "https://placehold.co/400x400/f3f4f6/9ca3af?text=Gift" : Model.CoverImageUrl)" 
+                     onerror="this.onerror=null; this.src='https://placehold.co/400x400/f3f4f6/9ca3af?text=No+Image';" 
+                     class="img-fluid transition-all" style="max-height: 500px; object-fit: contain;" alt="@Model.Name">
+            </div>
+            <div class="d-flex gap-3 overflow-auto pb-2 scroll-hide">
+                <div class="card border-2 border-dark rounded-4 p-2 cursor-pointer bg-white thumb-active transition-all" style="width: 100px; height: 100px; flex-shrink: 0;" onclick="changeImg('@Model.CoverImageUrl', this)">
+                    <img src="@(string.IsNullOrEmpty(Model.CoverImageUrl) ? "https://placehold.co/100x100/f3f4f6/9ca3af?text=Gift" : Model.CoverImageUrl)" 
+                         onerror="this.onerror=null; this.src='https://placehold.co/100x100/f3f4f6/9ca3af?text=N/A';" 
+                         class="w-100 h-100" style="object-fit: contain;">
+                </div>
+                @if (Model.ProductImages != null)
+                {
+                    @foreach (var img in Model.ProductImages)
+                    {
+                        <div class="card border-0 rounded-4 p-2 cursor-pointer bg-light transition-all" style="width: 100px; height: 100px; flex-shrink: 0;" onclick="changeImg('@img.ImageUrl', this)">
+                            <img src="@img.ImageUrl" class="w-100 h-100" style="object-fit: contain;">
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+
+        <!-- Product Info -->
+        <div class="col-lg-5 animate-up" style="animation-delay: 0.1s;">
+            <div class="ps-lg-4">
+                <div class="badge bg-accent-soft text-accent px-3 py-2 rounded-pill mb-3 fw-bold">
+                    @(Model.Category?.Name ?? "Unique Find")
+                </div>
+                
+                <h1 class="display-5 fw-800 mb-2">@Model.Name</h1>
+                
+                <div class="d-flex align-items-center mb-4">
+                    <div class="text-warning me-2">
+                        @for (int i = 1; i <= 5; i++)
+                        {
+                            if (i <= Math.Round(avgRating))
+                            {
+                                <i class="bi bi-star-fill"></i>
+                            }
+                            else
+                            {
+                                <i class="bi bi-star"></i>
+                            }
+                        }
+                    </div>
+                    <span class="text-muted small fw-medium">@avgRating (@reviewCount customer reviews)</span>
+                </div>
+
+                <h2 class="display-6 fw-bold text-dark mb-4">@Model.Price.ToString("C")</h2>
+
+                <p class="text-muted lead mb-5">@Model.Description</p>
+
+                <div class="p-4 bg-light rounded-5 mb-5">
+                    <div class="row g-4">
+                        <div class="col-6 border-end">
+                            <small class="text-muted d-block text-uppercase fw-bold mb-1" style="font-size: 0.65rem; letter-spacing: 1px;">Availability</small>
+                            <span class="fw-bold @(Model.StockQuantity > 0 ? "text-success" : "text-danger")">
+                                <i class="bi @(Model.StockQuantity > 0 ? "bi-check-circle-fill" : "bi-x-circle-fill") me-1"></i>
+                                @(Model.StockQuantity > 0 ? "In Stock" : "Sold Out")
+                            </span>
+                        </div>
+                        <div class="col-6">
+                            <small class="text-muted d-block text-uppercase fw-bold mb-1" style="font-size: 0.65rem; letter-spacing: 1px;">SKU</small>
+                            <span class="fw-bold text-dark">GS-@Model.Id.ToString("D5")</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex gap-3 align-items-center mb-5">
+                    <div class="d-flex align-items-center bg-white border border-2 rounded-pill px-2 py-1">
+                        <button class="btn btn-link text-dark p-2" type="button" onclick="updateQty(-1)"><i class="bi bi-dash-lg"></i></button>
+                        <input type="text" id="qtyInput" class="form-control border-0 text-center fw-bold bg-transparent p-0" style="width: 40px;" value="1" readonly>
+                        <button class="btn btn-link text-dark p-2" type="button" onclick="updateQty(1)"><i class="bi bi-plus-lg"></i></button>
+                    </div>
+                    <button class="btn btn-primary-custom flex-grow-1 rounded-pill py-3" onclick="addToCart()" @(Model.StockQuantity <= 0 ? "disabled" : "")>
+                        <i class="bi bi-bag-plus me-2"></i> @(Model.StockQuantity > 0 ? "Add to Cart" : "Out of Stock")
+                    </button>
+                    <button class="btn btn-outline-dark rounded-circle p-0 d-flex align-items-center justify-content-center" style="width: 56px; height: 56px;">
+                        <i class="bi bi-heart fs-5"></i>
+                    </button>
+                </div>
+
+                <div class="d-flex flex-column gap-3">
+                    <div class="d-flex align-items-center gap-3">
+                        <i class="bi bi-truck fs-4 text-accent"></i>
+                        <div>
+                            <span class="fw-bold d-block">Free Delivery</span>
+                            <small class="text-muted">On orders over $100</small>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center gap-3">
+                        <i class="bi bi-shield-check fs-4 text-accent"></i>
+                        <div>
+                            <span class="fw-bold d-block">2 Year Warranty</span>
+                            <small class="text-muted">Guaranteed quality from Presento</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tabs Section -->
+    <div class="border-top pt-5 mt-5 animate-up">
+        <ul class="nav nav-pills mb-5 gap-3 justify-content-center" id="productTabs">
+            <li class="nav-item">
+                <a class="nav-link active rounded-pill px-4 py-2 fw-bold" data-bs-toggle="tab" href="#desc">Description</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rounded-pill px-4 py-2 fw-bold text-muted" data-bs-toggle="tab" href="#spec">Specifications</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rounded-pill px-4 py-2 fw-bold text-muted" data-bs-toggle="tab" href="#reviews">Reviews (@reviewCount)</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="desc">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <p class="text-muted lead">@Model.Description</p>
+                        <p class="text-muted">Each item is carefully inspected and wrapped with our signature premium packaging to ensure it arrives in perfect condition. We take pride in sourcing only the finest materials for our collection, ensuring that your gift is as lasting as the memories it creates.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="spec">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="card border-0 bg-light rounded-5 p-4">
+                            <table class="table table-borderless mb-0">
+                                <tr><td class="text-muted py-3">Material</td><td class="fw-bold text-end py-3">Premium Quality</td></tr>
+                                <tr><td class="text-muted py-3 border-top">Weight</td><td class="fw-bold text-end py-3 border-top">1.2 lbs</td></tr>
+                                <tr><td class="text-muted py-3 border-top">Dimensions</td><td class="fw-bold text-end py-3 border-top">10" x 8" x 4"</td></tr>
+                                <tr><td class="text-muted py-3 border-top">Origin</td><td class="fw-bold text-end py-3 border-top">Handcrafted with care</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="reviews">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="d-flex justify-content-between align-items-center mb-4 border-bottom pb-3">
+                            <h4 class="fw-bold mb-0">Customer Reviews</h4>
+                        </div>
+                        
+                        <!-- Review List -->
+                        <div class="mb-5">
+                            @if (reviewCount == 0)
+                            {
+                                <p class="text-muted text-center py-4 bg-light rounded-4">No reviews yet. Be the first to review this product!</p>
+                            }
+                            else
+                            {
+                                @foreach (var review in reviews)
+                                {
+                                    <div class="mb-4 pb-4 border-bottom">
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <div class="fw-bold text-dark">@(review.User?.FullName ?? "User")</div>
+                                            <small class="text-muted">@review.CreatedAt.ToString("MMM dd, yyyy")</small>
+                                        </div>
+                                        <div class="text-warning mb-2" style="font-size: 0.85rem;">
+                                            @for (int i = 1; i <= 5; i++)
+                                            {
+                                                if (i <= review.Rating)
+                                                {
+                                                    <i class="bi bi-star-fill"></i>
+                                                }
+                                                else
+                                                {
+                                                    <i class="bi bi-star"></i>
+                                                }
+                                            }
+                                        </div>
+                                        <p class="text-muted mb-0">@review.Comment</p>
+                                    </div>
+                                }
+                            }
+                        </div>
+
+                        <!-- Write Review Form -->
+                        @if (userId != null && !hasReviewed)
+                        {
+                            <div class="card border-1 border-dark rounded-4 p-4 shadow-sm">
+                                <h5 class="fw-bold mb-4">Write a Review</h5>
+                                <form asp-controller="Product" asp-action="AddReview" method="post">
+                                    <input type="hidden" name="productId" value="@Model.Id" />
+                                    
+                                    <div class="mb-3">
+                                        <label class="form-label fw-bold">Rating *</label>
+                                        <select name="rating" class="form-select rounded-0 border-dark bg-light" required>
+                                            <option value="5">5 - Excellent</option>
+                                            <option value="4">4 - Very Good</option>
+                                            <option value="3">3 - Average</option>
+                                            <option value="2">2 - Poor</option>
+                                            <option value="1">1 - Terrible</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-4">
+                                        <label class="form-label fw-bold">Your Review *</label>
+                                        <textarea name="comment" class="form-control rounded-0 border-dark bg-light" rows="4" placeholder="What did you like or dislike?" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-dark w-100 rounded-0 py-3 fw-bold text-uppercase">Submit Review</button>
+                                </form>
+                            </div>
+                        }
+                        else if (userId != null && hasReviewed)
+                        {
+                            <div class="text-center py-4 bg-light rounded-4 border border-dark">
+                                <p class="mb-0 fw-bold"><i class="bi bi-check-circle-fill me-2 text-success"></i>You have already reviewed this product. Thank you!</p>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="text-center py-4 bg-light rounded-4">
+                                <p class="mb-3">You must be logged in to post a review.</p>
+                                <a asp-controller="Account" asp-action="Login" class="btn btn-outline-dark rounded-0 px-4">Sign In</a>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function changeImg(url, el) {
+            $('#mainImg').addClass('opacity-0');
+            setTimeout(() => {
+                $('#mainImg').attr('src', url).removeClass('opacity-0');
+            }, 200);
+            
+            $('.thumb-active').removeClass('thumb-active border-dark border-2 bg-white').addClass('border-0 bg-light');
+            $(el).addClass('thumb-active border-dark border-2 bg-white').removeClass('border-0 bg-light');
+        }
+        function updateQty(val) {
+            let current = parseInt($('#qtyInput').val());
+            let next = current + val;
+            if (next >= 1 && next <= @(Model.StockQuantity > 0 ? Model.StockQuantity : 1)) {
+                $('#qtyInput').val(next);
+            }
+        }
+        function addToCart() {
+            let qty = $('#qtyInput').val();
+            window.location.href = `/Cart/Add?productId=@Model.Id&quantity=${qty}`;
+        }
+    </script>
+}
+
+<style>
+    .scroll-hide::-webkit-scrollbar { display: none; }
+    .scroll-hide { -ms-overflow-style: none; scrollbar-width: none; }
+    .cursor-pointer:hover { transform: scale(1.05); }
+    #productTabs .nav-link { border: 2px solid transparent; transition: all 0.3s; }
+    #productTabs .nav-link.active { background: #000 !important; color: #fff !important; }
+    #productTabs .nav-link:not(.active):hover { background: rgba(0,0,0,0.05); }
+    .fw-800 { font-weight: 800; }
+    .transition-all { transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); }
+</style>

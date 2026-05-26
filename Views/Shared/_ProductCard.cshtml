@@ -1,0 +1,52 @@
+@model GiftStoreMVC.Models.Product
+
+<div class="product-card-v4">
+    <div class="img-wrapper">
+        <span class="badge-new">New</span>
+        <a asp-controller="Product" asp-action="Details" asp-route-id="@Model.Id">
+            <img src="@(string.IsNullOrEmpty(Model.CoverImageUrl) ? "https://placehold.co/400x400/f3f4f6/9ca3af?text=Gift" : Model.CoverImageUrl)" 
+                 onerror="this.onerror=null; this.src='https://placehold.co/400x400/f3f4f6/9ca3af?text=No+Image';" 
+                 alt="@Model.Name" loading="lazy">
+        </a>
+        <button class="wishlist-btn" onclick="event.preventDefault(); window.location.href='/Wishlist/Add?productId=@Model.Id'" title="Add to Wishlist">
+            <i class="bi bi-heart-fill text-dark" style="font-size:0.85rem;"></i>
+        </button>
+    </div>
+    <div class="card-content">
+        <div class="product-category">@(Model.Category?.Name ?? "Gift")</div>
+        <h6 class="product-title">
+            <a asp-controller="Product" asp-action="Details" asp-route-id="@Model.Id">@Model.Name</a>
+        </h6>
+        @{
+            var reviews = Model.Reviews ?? new List<GiftStoreMVC.Models.Review>();
+            var count = reviews.Count;
+            var avg = count > 0 ? Math.Round(reviews.Average(r => r.Rating), 1) : 0;
+        }
+        <div class="rating">
+            <span class="stars">
+                @for (int i = 1; i <= 5; i++)
+                {
+                    if (i <= Math.Round(avg))
+                    {
+                        <i class="bi bi-star-fill text-warning"></i>
+                    }
+                    else
+                    {
+                        <i class="bi bi-star text-warning"></i>
+                    }
+                }
+            </span>
+            <span>@avg (@count)</span>
+        </div>
+        <div class="price-row">
+            <div>
+                <span class="current-price">@Model.Price.ToString("C")</span>
+                <span class="original-price ms-2">@((Model.Price * 1.2m).ToString("C"))</span>
+            </div>
+            <span class="discount-badge">20% off</span>
+        </div>
+        <button class="buy-btn" onclick="window.location.href='/Cart/Add?productId=@Model.Id&quantity=1'">
+            <i class="bi bi-bag-plus"></i> Add to Cart
+        </button>
+    </div>
+</div>

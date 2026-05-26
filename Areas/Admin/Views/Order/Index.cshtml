@@ -1,0 +1,78 @@
+@model IEnumerable<GiftStoreMVC.Models.Order>
+@{
+    ViewData["Title"] = "Manage Orders";
+    Layout = "_AdminLayout";
+}
+
+<div class="admin-card">
+    <div class="admin-card-header">
+        <h6><i class="bi bi-bag-check-fill me-2" style="color:var(--accent);"></i>All Orders</h6>
+        <span class="text-muted" style="font-size:0.8rem;">@Model.Count() total orders</span>
+    </div>
+    <div style="overflow-x:auto;">
+        <table class="admin-table">
+            <thead>
+                <tr>
+                    <th>Order #</th>
+                    <th>Customer</th>
+                    <th>Date</th>
+                    <th>Total</th>
+                    <th>Payment</th>
+                    <th>Status</th>
+                    <th class="text-end">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td><span class="fw-700" style="color:var(--accent);">#@item.OrderNumber</span></td>
+                        <td>
+                            <div class="d-flex align-items-center gap-2">
+                                <div style="width:32px;height:32px;border-radius:8px;background:#ede9fe;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.8rem;color:#7c3aed;flex-shrink:0;">
+                                    @(item.User?.FullName?.Substring(0,1).ToUpper() ?? "?")
+                                </div>
+                                <div>
+                                    <div class="fw-600" style="font-size:0.875rem;">@item.User?.FullName</div>
+                                    <div class="text-muted" style="font-size:0.75rem;">@item.User?.Email</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td style="font-size:0.82rem;color:#6b7280;">@item.OrderDate.ToString("MMM dd, yyyy")</td>
+                        <td class="fw-700">₹@item.TotalAmount.ToString("N2")</td>
+                        <td style="font-size:0.82rem;">@item.PaymentMethod</td>
+                        <td>
+                            @switch (item.Status)
+                            {
+                                case GiftStoreMVC.Models.OrderStatus.Pending:
+                                    <span class="status-badge badge-pending">Pending</span>
+                                    break;
+                                case GiftStoreMVC.Models.OrderStatus.Confirmed:
+                                    <span class="status-badge badge-confirmed">Confirmed</span>
+                                    break;
+                                case GiftStoreMVC.Models.OrderStatus.Shipped:
+                                    <span class="status-badge badge-shipped">Shipped</span>
+                                    break;
+                                case GiftStoreMVC.Models.OrderStatus.Delivered:
+                                    <span class="status-badge badge-delivered">Delivered</span>
+                                    break;
+                                case GiftStoreMVC.Models.OrderStatus.Cancelled:
+                                    <span class="status-badge badge-cancelled">Cancelled</span>
+                                    break;
+                                default:
+                                    <span class="status-badge badge-inactive">@item.Status</span>
+                                    break;
+                            }
+                        </td>
+                        <td class="text-end">
+                            <a asp-action="Details" asp-route-id="@item.Id"
+                               class="btn btn-sm btn-accent px-3 py-1" style="font-size:0.78rem;">
+                                Manage
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,131 @@
+@model IEnumerable<GiftStoreMVC.Models.Product>
+@{
+    ViewData["Title"] = "Home";
+    var categories = ViewBag.Categories as List<GiftStoreMVC.Models.Category>;
+}
+
+<!-- HERO -->
+<section class="position-relative d-flex align-items-center justify-content-center mb-5" style="min-height: 85vh; background: url('https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=1920&q=80') center/cover no-repeat;">
+    <!-- Overlay -->
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-black" style="opacity: 0.4;"></div>
+    
+    <div class="container position-relative z-1 text-center text-white py-5">
+        <div class="badge bg-white text-dark px-3 py-2 mb-4 fw-bold" style="letter-spacing: 2px; font-size: 0.8rem;">NEW COLLECTION</div>
+        <h1 class="display-1 fw-800 mb-4 text-uppercase" style="letter-spacing: -2px;">Curated Gifts<br>For Every Occasion.</h1>
+        <p class="lead mb-5 mx-auto fs-4" style="max-width: 600px; color: #f8f9fa;">
+            Discover our minimalist selection of high-quality, timeless gifts. No clutter, just perfect presents.
+        </p>
+        <a asp-controller="Product" asp-action="Index" class="btn btn-light px-5 py-3 fw-bold text-uppercase" style="letter-spacing: 1px; transition: all 0.3s;">
+            Shop Now
+        </a>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="py-5 border-bottom">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-3 col-6">
+                <div class="feature-box">
+                    <div class="feature-icon"><i class="bi bi-truck"></i></div>
+                    <h6>Free Shipping</h6>
+                    <p>On orders over $50</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="feature-box">
+                    <div class="feature-icon"><i class="bi bi-arrow-repeat"></i></div>
+                    <h6>Easy Returns</h6>
+                    <p>30 days return policy</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="feature-box">
+                    <div class="feature-icon"><i class="bi bi-shield-check"></i></div>
+                    <h6>Secure Checkout</h6>
+                    <p>100% secure payments</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="feature-box">
+                    <div class="feature-icon"><i class="bi bi-box"></i></div>
+                    <h6>Premium Packaging</h6>
+                    <p>Beautifully wrapped</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CATEGORIES -->
+@if (categories != null && categories.Any())
+{
+    <section class="py-5 my-5">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Shop By Category</h2>
+            </div>
+            <div class="row g-4">
+                @foreach (var category in categories)
+                {
+                    <div class="col-lg-4 col-md-6">
+                        <a asp-controller="Product" asp-action="Index" asp-route-category="@category.Id" class="text-decoration-none">
+                            <div class="category-card">
+                                <img src="@(string.IsNullOrEmpty(category.ImageUrl) ? "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=600&q=80" : category.ImageUrl)"
+                                     alt="@category.Name" loading="lazy">
+                                <div class="overlay">
+                                    <h4>@category.Name</h4>
+                                    <span class="btn btn-outline-accent mt-3 bg-transparent text-white border-white">Shop Now</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                }
+            </div>
+        </div>
+    </section>
+}
+
+<!-- FEATURED PRODUCTS -->
+@if (Model != null && Model.Any())
+{
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Picks</h2>
+            </div>
+            <div class="row g-4">
+                @foreach (var product in Model)
+                {
+                    <div class="col-6 col-lg-3">
+                        <partial name="_ProductCard" model="product" />
+                    </div>
+                }
+            </div>
+            <div class="text-center mt-5">
+                <a asp-controller="Product" asp-action="Index" class="btn btn-outline-accent px-5 py-3">
+                    View All Products
+                </a>
+            </div>
+        </div>
+    </section>
+}
+
+<!-- NEWSLETTER CTA -->
+<section class="py-5 my-5">
+    <div class="container">
+        <div class="p-5 text-center bg-dark text-white">
+            <div class="max-w-600 mx-auto">
+                <h2 class="section-title text-white mb-3">Join Our Newsletter</h2>
+                <p class="mb-4 text-muted">Subscribe for exclusive offers, minimal lifestyle tips, and early access to new arrivals.</p>
+                <form class="d-flex justify-content-center gap-2" method="get" action="/Home/Index">
+                    <input type="email" name="email" class="form-control rounded-0 py-3 px-4"
+                           placeholder="Your email address" required style="max-width: 300px;">
+                    <button type="submit" class="btn btn-light rounded-0 px-4 fw-600">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

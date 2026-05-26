@@ -1,0 +1,109 @@
+@model IEnumerable<GiftStoreMVC.Models.Category>
+@{
+    ViewData["Title"] = "Manage Categories";
+    Layout = "_AdminLayout";
+}
+
+<div class="row g-4">
+    <!-- Add Category Form -->
+    <div class="col-lg-4">
+        <div class="admin-card" style="position:sticky;top:80px;">
+            <div class="admin-card-header">
+                <h6><i class="bi bi-plus-circle-fill me-2" style="color:var(--accent);"></i>Add Category</h6>
+            </div>
+            <div class="admin-card-body">
+                <form asp-action="Create" method="post" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label class="form-label">Category Name <span class="text-danger">*</span></label>
+                        <input name="Name" class="form-control" placeholder="e.g. Birthday Gifts" required />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Description</label>
+                        <textarea name="Description" class="form-control" rows="3" placeholder="Short description..."></textarea>
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label">Category Image</label>
+                        <input type="file" name="imageFile" class="form-control" accept="image/*" />
+                        <p class="text-muted mt-1 mb-0" style="font-size:0.75rem;">Upload an image for the category</p>
+                    </div>
+                    <button type="submit" class="btn btn-accent w-100 py-2 fw-600">
+                        <i class="bi bi-plus-lg me-2"></i>Create Category
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Categories List -->
+    <div class="col-lg-8">
+        <div class="admin-card">
+            <div class="admin-card-header">
+                <h6><i class="bi bi-tags-fill me-2" style="color:var(--accent);"></i>All Categories <span class="text-muted fw-400" style="font-size:0.8rem;">(@Model.Count())</span></h6>
+            </div>
+            <div style="overflow-x:auto;">
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th class="text-end">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr id="row-@item.Id">
+                                <td>
+                                    <img src="@(string.IsNullOrEmpty(item.ImageUrl) ? "https://placehold.co/48x48/f3f4f6/9ca3af?text=C" : item.ImageUrl)"
+                                         class="rounded-2" style="width:48px;height:48px;object-fit:cover;">
+                                </td>
+                                <td class="fw-700" style="font-size:0.875rem;">@item.Name</td>
+                                <td class="text-muted" style="font-size:0.82rem;max-width:200px;">
+                                    <span style="display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;">
+                                        @item.Description
+                                    </span>
+                                </td>
+                                <td class="text-end">
+                                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn-sm-icon btn-outline-accent me-1" title="Edit">
+                                        <i class="bi bi-pencil-fill"></i>
+                                    </a>
+                                    <button class="btn-sm-icon" style="background:#fee2e2;color:#ef4444;" title="Delete"
+                                            onclick="deleteCategory(@item.Id)">
+                                        <i class="bi bi-trash-fill"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        function deleteCategory(id) {
+            Swal.fire({
+                title: 'Delete Category?',
+                text: 'Products in this category may be affected.',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#ef4444',
+                cancelButtonColor: '#6b7280',
+                confirmButtonText: 'Yes, delete',
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    $.post('/Admin/Category/Delete/' + id, function (res) {
+                        if (res.success) {
+                            $('#row-' + id).fadeOut(300);
+                            Swal.fire({ title: 'Deleted!', icon: 'success', timer: 1200, showConfirmButton: false });
+                        }
+                    });
+                }
+            });
+        }
+    </script>
+}
